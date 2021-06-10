@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Jingyuan Tan
+ * Student ID:991563361
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
@@ -12,12 +11,21 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author sivagama
+ * @author Jingyuan Tan
  */
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
+   
+   public Card(){
+   
+   }
+   
+   public Card(String suit, int value){
+   this.suit = suit;
+   this.value = value;
+   }
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
@@ -49,5 +57,9 @@ public class Card {
     }
    
    
-    
+   @Override
+    public String toString() {
+        return String.format(suit +" "+ value);
+    }
 }
+
