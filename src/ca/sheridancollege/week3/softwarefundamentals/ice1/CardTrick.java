@@ -54,7 +54,7 @@ public class CardTrick {
             System.out.print("contain");
             }
             else{
-          
+            System.out.print("not contain");
             }
             
         //Then report the result here
