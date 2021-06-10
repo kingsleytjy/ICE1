@@ -17,7 +17,7 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
-        Card LuckyCard = new Card(Diamonds,6);
+        Card LuckyCard = new Card("Diamonds",6);
         
         Random r = new Random();
         
